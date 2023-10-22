@@ -7,9 +7,10 @@
 //     console.log("Database Connected")
 // }
 
+// conn.js
 import mongoose from "mongoose";
 
-export default async function connect() {
+export async function connect() {
     try {
         await mongoose.connect(process.env.ATLAS_URI, {
             useNewUrlParser: true,
